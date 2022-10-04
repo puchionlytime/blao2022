@@ -168,8 +168,16 @@ small{
     font-size:70%;
 }
 
+small2{
+    font-size:80%;
+}
+
 big{
     font-size:130%;
+}
+
+big2{
+    font-size:120%;
 }
 
 ins{
