@@ -1,0 +1,480 @@
+@charset "UTF-8";
+@import url("html5reset-1.6.1.css");
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+/* ↓レイアウト↓ */
+
+*{
+    line-height:150%;
+}
+
+body{
+    color:#333;
+    background-color:#f8f4e6;
+    font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+}
+
+.base{
+    margin:0 auto;
+    max-width:1200px;
+}
+
+.header{
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    position:relative;
+}
+
+.header2{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:300px;
+    margin:0px;
+    transform:translate(-50%,-50%);
+    background-color:#fff;
+    box-shadow: 0px 0px 0px 9px #fff,0px 0px 0px 11px;
+    border-width:1px;
+    border-style:solid;
+    padding:3px;
+}
+
+.footer{
+    padding:10px;
+    text-align:center;
+}
+
+.work{
+    padding:10px;
+    margin:50px 0px 20px 0px;
+}
+
+.menu{
+    margin:20px 0px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    font-family: 'メイリオ', serif;
+}
+
+.column{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin:15px 0px;
+    border-radius:6px;
+    background-color:#fff;
+    box-shadow:1px 1px 3px -1px #888;
+}
+
+.box{
+    margin:0px 5px;
+}
+
+.text{
+    margin:30px auto;
+    padding:10px;
+    line-height:180%;
+    max-width:950px;
+}
+
+img
+{
+	max-width:100% ;
+	height:auto ;
+}
+
+
+/* ↓タグ↓ */
+
+h1{
+    font-size:110%;
+    font-weight:normal;
+    font-family: 'メイリオ', serif;
+    margin:5px 0px;
+}
+
+h2{
+    font-size:70%;
+    font-weight:normal;
+    margin:5px 0px;
+}
+
+h3{
+    font-size:150%;
+    font-weight:normal;
+    text-align:center;
+    margin:25px 0px;
+    font-family: 'メイリオ', serif;
+}
+
+h3 span {
+  display:block;
+  margin-top:0px;
+  color:#666;
+  font-size:60%;
+}
+
+h3:first-letter{
+    font-size:180%;
+}
+
+h4{
+    font-size:120%;
+    font-weight:normal;
+    margin:20px 0px;
+    border-style:double;
+    border-width:0px 0px 1px 0px;
+    border-color:#666;
+    padding:4px 0px;
+    font-family: 'メイリオ', serif;
+}
+
+h5{
+    font-size:100%;
+    font-weight:normal;
+    margin:20px 0px;
+    color:#737486;
+}
+
+h6{
+    font-size:90%;
+    font-weight:normal;
+    margin:10px 0px;
+    color:#6f5b52;
+}
+
+p{
+    text-align:left;
+    margin:10px 0px;
+    padding:5px;
+    font-size:80%;
+}
+
+em{
+    background: linear-gradient(transparent 60%, #fcf 60%);
+    font-style:normal;
+}
+
+strong{
+    font-weight:normal;
+    background-color:#4470b0;
+    color:#fff;
+    padding:0px 2px;
+}
+
+small{
+    font-size:70%;
+}
+
+big{
+    font-size:130%;
+}
+
+ins{
+    background-color:#f9f1db;
+}
+
+i{
+    font-style:italic;
+}
+
+a:link{
+    color:#4470b0;
+    text-decoration:none;
+}
+
+a:visited{
+    color:#4470b0;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline #f8f4e6;
+}
+
+h1 a:link{
+    color:#000;
+}
+
+h1 a:visited{
+    color:#000;
+}
+
+blockquote{
+    position:relative;
+    padding:10px 10px 10px 50px;
+    box-sizing border-box;
+    margin:15px;
+    font-size:90%;
+    border-radius:6px;
+    background-color:#f9f1db;
+}
+
+blockquote:before{
+    display:inline-block;
+    position:absolute;
+    top:15px;
+    left:15px;
+    vertical-align: middle;
+    content:'\00275e';
+    color:#666;
+    font-size:30px;
+}
+
+li{
+    padding:5px;
+    margin:0px 0px 0px 40px;
+}
+
+ul{
+    margin:10px 0px;
+}
+
+ol{
+    margin:10px 0px;
+}
+
+dl{
+    padding-left:3px;
+    margin:10px 0px;
+}
+
+dt{
+    padding-left:5px;
+    font-family: 'メイリオ', serif;
+    font-size:110%;
+}
+
+dd{
+    padding-left:10px;
+}
+
+address{
+    font-size:75%;
+    font-family: 'メイリオ', serif;
+}
+
+cite{
+    font-size:smaller;
+}
+
+
+/* ↓classタグ↓ */
+
+.item{
+    text-align:center;
+    margin:5px;
+    padding:5px;
+}
+
+.item a{
+    color:#000;
+}
+
+.co-1{
+    padding:10px 5px;
+    font-size:90%;
+    text-align:center;
+    width:40%;
+    background-size:cover;
+    background-position:center;
+    min-height:100px;
+}
+
+.co-1 span{
+    background:rgba(255,255,255,0.8);
+    padding:0px 2px;
+}
+
+.bg1{
+    background-image:url(bg1.jpg);
+}
+
+.bg2{
+    background-image:url(bg2.jpg);
+}
+
+.bg3{
+    background-image:url(bg3.jpg);
+}
+
+.co-2{
+    padding:10px 5px;
+    font-size:75%;
+    text-align:left;
+    width:100%;
+}
+
+.list1{
+    list-style-type:circle;
+}
+
+.list2{
+    list-style-type:upper-roman;
+}
+
+.hr1{
+    margin:5px 0px;
+    border-top: 1px #ccc;
+    border-bottom: 1px #fff;
+    border-style:solid;
+}
+
+.hr2{
+    margin:5px 0px;
+    background-image:url(line.png);
+    background-position:center;
+    padding:12px;
+    border-width:0px;
+}
+
+.hr3{
+    margin:5px 0px;
+    height:50px;
+    border-width:0px;
+}
+
+.p1{
+    background-color:#fff;
+    border-radius:6px;
+}
+
+.p2{
+    border-style:solid;
+    border-width:1px;
+    border-color:#ccc;
+    border-radius:6px;
+}
+
+.p3{
+    border-style:dashed;
+    border-width:1px;
+    border-color:#ccc;
+    border-radius:6px;
+}
+
+.dl1{
+    border-style:double;
+    border-width:0px 0px 0px 7px;
+    border-color:#ccc;
+    margin-left:10px;
+}
+
+.dt1{
+    color:#000;
+}
+
+.dt2{
+    text-decoration:underline #f8f4e6;
+}
+
+.dd1{
+    font-size:95%;
+    margin:5px;
+}
+
+.memo{
+    background-color:#fff;
+    font-size:80%;
+    padding:0px 10px;
+    height:150px;
+    overflow:auto;
+    margin:5px 10px;
+    box-shadow:1px 1px 3px -1px #888;
+    border-radius:6px;
+}
+
+.img1{
+    box-shadow:1px 1px 3px -1px #888;
+    margin:1px;
+}
+
+.pagetop{
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+}
+ 
+.pagetop a{
+    display: block;
+    text-decoration: none;
+}
+ 
+.pagetop:hover{
+    opacity: 0.7 ;
+}
+
+
+
+/*↓ディスプレイ480px以下用↓*/
+
+@media screen and (max-width:480px) 
+
+{
+    
+.base{
+    width:auto;
+    margin:0px 5px;
+}
+
+.box{
+    margin:0px;
+}
+
+.work{
+    width:auto;
+    margin:30px 0px;
+    padding:10px;
+}
+
+.text{
+    width:auto;
+    margin:30px 0px;
+    padding:10px;
+}
+
+.menu{
+    width:auto;
+    margin:0px;
+    font-size:90%;
+}
+
+.column{
+    flex-direction:column;
+    width:auto;
+    margin:10px 0px;
+}
+
+.co-1{
+    width:97%;
+}
+
+.co-2{
+    width:97%;
+}
+
+.item a{
+    display:block;
+}
+
+.item a:hover{
+    background-color:#fff;
+    margin:-5px;
+    padding:5px;
+}
+
+.item{
+    width:40%;
+}
+
+.header2{
+    width:200px;
+}
+
+h2{
+    font-size:60%;
+}
+
+}
